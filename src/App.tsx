@@ -5,6 +5,8 @@ function App() {
     return (
         <div className="App">
             This is APP component
+            <Rating />
+            <Accordion />
         </div>
     );
 }
@@ -29,7 +31,6 @@ function Accordion() {
                 <li>2</li>
                 <li>3</li>
             </ul>
-
         </div>
 
     )
