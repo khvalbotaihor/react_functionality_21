@@ -14,13 +14,17 @@ function App() {
 function Rating() {
     return (
         <div>
-            <div>start</div>
-            <div>start</div>
-            <div>start</div>
-            <div>start</div>
-            <div>start</div>
+            <Star />
+            <Star />
+            <Star />
+            <Star />
+            <Star />
         </div>
     )
+}
+
+function Star() {
+    return <div>start</div>
 }
 
 function Accordion() {
