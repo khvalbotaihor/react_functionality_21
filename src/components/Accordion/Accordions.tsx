@@ -1,20 +1,27 @@
 import React from "react";
 
-function Accordion() {
+type accordionTitle = {
+    title: string
+}
+function Accordion(props: accordionTitle) {
     console.log("Accordion is rendering")
     return(<div>
-            <AccordionTitle />
+            <AccordionTitle title={props.title}/>
             <AccordionBody />
-
         </div>
 
     )
 }
 
-function AccordionTitle() {
+
+type accordionTitlePropsType = {
+    title: string
+}
+
+function AccordionTitle(props: accordionTitlePropsType ) {
     console.log("Accordion titlr")
     return(
-        <h3>Menu</h3>
+        <h3>{props.title}</h3>
     )
 }
 
