@@ -9,7 +9,6 @@ function Accordion(props: accordionTitle) {
             <AccordionTitle title={props.title}/>
             <AccordionBody />
         </div>
-
     )
 }
 
